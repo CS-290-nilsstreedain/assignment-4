@@ -8,7 +8,7 @@ const http = require('http');
 const fs = require('fs');
 
 // Set port to env var, otherwise use 3000
-const port = (process.env.PORT) ? parseInt(process.env.PORT) : 3000;
+const port = process.env.PORT || 3000;
 
 // Create a HashMap containing all files in directory
 var files = {}
